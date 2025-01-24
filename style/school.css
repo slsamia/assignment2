@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.quicksand-fonts {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* nav styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-items {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: center;
+}
+.btn {
+  border-radius: 10px;
+  height: 50px;
+  width: 150px;
+  border: none;
+  background-color: #fea301;
+  color: aliceblue;
+  margin-right: 40px;
+}
+.img {
+  margin-left: 100px;
+  height: 50px;
+}
+.logo {
+  display: flex;
+  margin-left: 25px;
+}
+#nav1 {
+  color: #fea301;
+}
+#nav2 {
+  color: #01acfd;
+}
+#nav3 {
+  color: #05d4df;
+}
+#nav4 {
+  color: #5d58ef;
+}
+/* banner style */
+.span1 {
+  color: #fea301;
+}
+.span2 {
+  color: #01acfd;
+}
+.btn2 {
+  color: aliceblue;
+  background-color: black;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+}
+.img2 {
+  height: 22.32rem;
+  width: 22.33rem;
+  margin-left: 300px;
+  margin-top: 5px;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 80px;
+  align-items: center;
+}
+.banner-content {
+  width: 640px;
+}
+.img2 {
+  width: 470px;
+  height: 575px;
+}
+
+/* card  */
+.card {
+  display: flex;
+  gap: 30px;
+  margin: 20px;
+  text-align: center;
+  padding: 50px;
+  background-image: url(bg.png);
+}
+.h2 {
+  justify-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  background-image: url(bg.png);
+}
+.banner-content {
+  background-image: url(bg.png);
+}
+.bg {
+  background-image: image(bg.png);
+}
+/* responsive part */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-item .img2 {
+    flex-direction: column;
+  }
+  .banner {
+    flex-direction: column;
+    .banner-content {
+      order: 2;
+    }
+  }
+  .img2 {
+    order: 1;
+  }
+  .banner {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 5px;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+/* 
+use width for both child div and apply justify content space between
+order for responsive
+
+*/
