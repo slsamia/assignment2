@@ -98,9 +98,17 @@
 .banner-content {
   background-image: url(bg.png);
 }
-.bg {
-  background-image: image(bg.png);
+
+.bt {
+  background-color: #fea301;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border: none;
+  color: aliceblue;
+  text-align: center;
 }
+
 /* responsive part */
 @media screen and (max-width: 576px) {
   .navbar,
