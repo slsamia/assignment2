@@ -87,9 +87,11 @@
   margin: 20px;
   text-align: center;
   padding: 50px;
+  box-shadow: #05d4df;
 }
 .container1 {
   background-image: linear-gradient(#def5ff, #ffffff);
+
   border-radius: 15px;
 }
 .container2 {
@@ -104,7 +106,6 @@
   justify-items: center;
   font-size: 2rem;
   font-weight: 600;
-  background-image: url(bg.png);
 }
 .banner-content {
   background-image: url(bg.png);
@@ -159,36 +160,98 @@
   border-radius: 5px;
 }
 
-/* div.container {
-  padding: 10px;
+/* footer section */
+.footer {
+  background-color: #0978a8;
+  display: flex;
+  justify-content: space-around;
+  height: 400px;
+  align-items: center;
+}
+.text {
+  color: #dce1dc;
+}
+.content {
+  justify-content: flex-start;
+}
+/* .footer-content {
+  text-align: left;
+  height: 22px;
+  width: 100px;
 } */
 /* responsive part */
 @media screen and (max-width: 576px) {
   .navbar,
-  .nav-item .img2 {
+  .img2 {
     flex-direction: column;
+    justify-items: flex-start;
   }
+
   .banner {
     flex-direction: column;
     .banner-content {
       order: 2;
+      height: 120px;
+      width: 357px;
     }
   }
   .img2 {
     order: 1;
+    margin-left: 5px;
+    height: 525px;
+    width: 357px;
   }
   .banner {
     text-align: center;
     margin-left: 0;
     margin-right: 5px;
+    text-align: center;
+    margin: 20px;
   }
-  .navbar {
+  /* .navbar {
     flex-direction: column;
+  } */
+  .nav-container {
+    display: none;
+  }
+  .h2 {
+    font-size: 1rem;
+    margin-top: 200px;
+    font-weight: 200px;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+    width: 320px;
+    padding: 10px;
+  }
+  .sing {
+    display: none;
+  }
+  .titel {
+    text-align: center;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 100px;
+    height: 600px;
+    width: 380px;
+  }
+  .text {
+    padding: 10px 50px;
+  }
+  #footr-image {
+    margin-top: 40px;
+    margin-left: 45px;
   }
 }
 
+.curriculum-section {
+  background-image: url("../imagess/bg.png");
+}
+
 /* 
-use width for both child div and apply justify content space between
-order for responsive
 
 */
