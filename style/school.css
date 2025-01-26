@@ -110,7 +110,11 @@
   background-image: url(bg.png);
   box-shadow: #8700ff;
 }
-
+.sing {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 .bt {
   background-color: #fea301;
   border-radius: 50%;
@@ -119,8 +123,14 @@
   border: none;
   color: aliceblue;
   text-align: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
+.bt span {
+  font-size: 20px;
+}
+
 #h3 {
   color: #64c8ff;
 }
@@ -131,11 +141,27 @@
   color: #8700ff;
 }
 /* image style */
-.image-containe {
-  display: flex;
-  flex-direction: column;
+.card1 {
+  border-radius: 10px;
+  width: 560px;
+  height: 580px;
+}
+.header {
+  background-color: #dce1dc;
+  color: white;
+  padding: 10px;
+}
+.container {
+  background-color: #256225;
+}
+.header1 {
+  background-color: #dce1dc;
+  border-radius: 5px;
 }
 
+/* div.container {
+  padding: 10px;
+} */
 /* responsive part */
 @media screen and (max-width: 576px) {
   .navbar,
