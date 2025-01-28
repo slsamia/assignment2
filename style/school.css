@@ -12,6 +12,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
+  
 }
 .nav-items {
   display: flex;
@@ -167,7 +168,7 @@ body {
 }
 .big-story-card {
   width: 50%;
-  border: 1px solid hsl(185, 9%, 30%);
+  border: 1px solid hsl(180, 16%, 80%);
   border-radius: 12px;
   overflow: hidden;
   position: relative;
@@ -184,7 +185,7 @@ body {
 }
 .storys-card {
   width: 47%;
-  border: 1px solid #f0aa00;
+  border: 1px solid #c5c2bd;
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -269,7 +270,7 @@ body {
     margin: 20px;
   }
   /* .navbar {
-    flex-direction: column;
+    justify-items: flex-start;
   } */
   .nav-container {
     display: none;
@@ -304,12 +305,22 @@ body {
   .card-inner {
     width: 100%;
     padding: 0;
+    height: 50%;
+    
+  }
+  .date{
+    font-size: 0.5em;
+  }
+  .card-date{
+padding: 3px 6px;
+display: inline-block;
+
   }
   .footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     height: auto;
-    width: 380px;
+   
   }
   .text {
     padding: 10px 50px;
@@ -318,12 +329,25 @@ body {
     margin-top: 40px;
     margin-left: 45px;
   }
+  .praragraph{
+    
+    padding-left: 50px;
+    display: flex;
+  }
 }
 
 .curriculum-section {
   background-image: url("../imagess/bg.png");
+
+  
 }
 
+@media screezn and (max-width: 576px) {
+  .story-content{
+  background-image: url("../imagess/bg.png");, linear-gradient(#0978a8, #dc3092d8);
+
+  }
+}
 /* 
 
 */
